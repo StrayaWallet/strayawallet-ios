@@ -4,7 +4,7 @@
 
 Bread is the best way to get started with bitcoin. Our simple, streamlined design is easy for beginners, yet powerful enough for experienced users.
 
-### Completely decentgit push -u ralized
+### Completely decentralized
 
 Unlike other iOS crypto wallets, **StrayaWallet** is a standalone StrayaCoin client. It connects directly to the StrayaCoin network using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, and doesn't rely on servers that can be hacked or disabled. 
 
