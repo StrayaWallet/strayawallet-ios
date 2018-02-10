@@ -1,4 +1,4 @@
-[![StrayaWallet](/images/top-logo.jpg)](https://itunes.apple.com/app/breadwallet/id885251393)
+[![StrayaWallet](/images/top-logo.jpg)](https://www.strayawallet.com)
 
 ## The easy and secure StrayaCoin wallet
 
@@ -15,6 +15,8 @@ Unlike other iOS crypto wallets, **StrayaWallet** is a standalone StrayaCoin cli
 ### Desgined with new users in mind
 
 Simplicity and ease-of-use is **StrayaWallet**'s core design principle. A simple recovery phrase (which we call a paper key) is all that is needed to restore the user's wallet if they ever lose or replace their device. **StrayaWallet** is [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), which means the user's balance and transaction history can be recovered just from the paper key.
+
+[![screenshots](/images/screenshots.jpg)](https://www.strayawallet.com)
 
 ### Features
 
