@@ -291,11 +291,11 @@ class ModalPresenter : Subscriber, Trackable {
                 self?.presentSecurityCenter()
             }
         }
-        menu.didTapSupport = { [weak self, weak menu] in
-            menu?.dismiss(animated: true, completion: {
-                self?.presentFaq()
-            })
-        }
+        //menu.didTapSupport = { [weak self, weak menu] in
+        //    menu?.dismiss(animated: true, completion: {
+        //        self?.presentFaq()
+        //    })
+        //}
         menu.didTapLock = { [weak self, weak menu] in
             menu?.dismiss(animated: true) {
                 self?.store.trigger(name: .lock)
@@ -422,10 +422,12 @@ class ModalPresenter : Subscriber, Trackable {
                                 let nodeSelector = NodeSelectorViewController(walletManager: walletManager)
                                 settingsNav.pushViewController(nodeSelector, animated: true)
                             })
+                            //MARK: BITCOIN WITHDRAWAL - USELES
 //                            Setting(title: S.BCH.title, callback: {
 //                                let bCash = BCashTransactionViewController(walletManager: walletManager, store: myself.store)
 //                                settingsNav.pushViewController(bCash, animated: true)
 //                            })
+                                //MARK
                         ]
                     ]
 
@@ -435,13 +437,13 @@ class ModalPresenter : Subscriber, Trackable {
             ]
         ]
 
-        if BRAPIClient.featureEnabled(.earlyAccess) {
-            rows["StrayaWallet"]?.insert(Setting(title: S.Settings.earlyAccess, callback: {
-                settingsNav.dismiss(animated: true, completion: {
-                    self.presentBuyController("/ea")
-                })
-            }), at: 1)
-        }
+       // if BRAPIClient.featureEnabled(.earlyAccess) {
+       //     rows["StrayaWallet"]?.insert(Setting(title: S.Settings.earlyAccess, callback: {
+       //         settingsNav.dismiss(animated: true, completion: {
+       //             self.presentBuyController("/ea")
+       //         })
+       //     }), at: 1)
+       // }
 
         rows["StrayaWallet"]?.append( Setting(title: S.Settings.review, callback: {
                 let alert = UIAlertController(title: S.Settings.review, message: S.Settings.enjoying, preferredStyle: .alert)
@@ -594,7 +596,7 @@ class ModalPresenter : Subscriber, Trackable {
         let vc: BRWebViewController
         
         #if Debug || Testflight
-            vc = BRWebViewController(bundleName: "bread-frontend-staging", mountPoint: mountPoint, walletManager: walletManager, store: store)
+            vc = BRWebViewController(bundleName: "bread-frontend", mountPoint: mountPoint, walletManager: walletManager, store: store)
         #else
             vc = BRWebViewController(bundleName: "bread-frontend", mountPoint: mountPoint, walletManager: walletManager, store: store)
         #endif

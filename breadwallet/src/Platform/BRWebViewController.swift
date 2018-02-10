@@ -69,12 +69,12 @@ import WebKit
         switch mountPoint {
         // MARK (losh11): - cleanup switch below
             case "/buy":
-                let addr = "https://api.loafwallet.org/buy?address=" + (walletManager.wallet?.receiveAddress)!
+                let addr = "https://api.strayawallet.com/buy?address=" + (walletManager.wallet?.receiveAddress)!
                 return URL(string: addr)!
             case "/support":
-                return URL(string: "https://api.loafwallet.org/support")!
+                return URL(string: "https://api.strayawallet.com/support")!
             case "/ea":
-                return URL(string: "https://api.loafwallet.org/ea")!
+                return URL(string: "https://api.strayawallet.com/ea")!
             default:
                 return URL(string: "http://127.0.0.1:\(server.port)\(mountPoint)")!
         }

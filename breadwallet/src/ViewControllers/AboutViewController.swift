@@ -80,16 +80,16 @@ class AboutViewController : UIViewController {
 
     private func setActions() {
         blog.button.tap = strongify(self) { myself in
-            myself.presentURL(string: "https://strayawallet.com")
+            myself.presentURL(string: "https://www.strayawallet.com")
         }
         twitter.button.tap = strongify(self) { myself in
-            myself.presentURL(string: "https://twitter.com/StrayaCoin")
+            myself.presentURL(string: "https://www.strayawallet.com/donate")
         }
         reddit.button.tap = strongify(self) { myself in
             myself.presentURL(string: "https://reddit.com/r/strayacoin/")
         }
         privacy.tap = strongify(self) { myself in
-            myself.presentURL(string: "https://strayawallet.com/legal")
+            myself.presentURL(string: "https://www.adelaidecreative.com.au")
         }
     }
 
