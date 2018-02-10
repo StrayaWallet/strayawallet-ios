@@ -291,11 +291,11 @@ class ModalPresenter : Subscriber, Trackable {
                 self?.presentSecurityCenter()
             }
         }
-        menu.didTapSupport = { [weak self, weak menu] in
-            menu?.dismiss(animated: true, completion: {
-                self?.presentFaq()
-            })
-        }
+        //menu.didTapSupport = { [weak self, weak menu] in
+        //    menu?.dismiss(animated: true, completion: {
+        //        self?.presentFaq()
+        //    })
+        //}
         menu.didTapLock = { [weak self, weak menu] in
             menu?.dismiss(animated: true) {
                 self?.store.trigger(name: .lock)
@@ -427,7 +427,7 @@ class ModalPresenter : Subscriber, Trackable {
 //                                let bCash = BCashTransactionViewController(walletManager: walletManager, store: myself.store)
 //                                settingsNav.pushViewController(bCash, animated: true)
 //                            })
-                                //MARK: END!
+                                //MARK
                         ]
                     ]
 
@@ -596,7 +596,7 @@ class ModalPresenter : Subscriber, Trackable {
         let vc: BRWebViewController
         
         #if Debug || Testflight
-            vc = BRWebViewController(bundleName: "bread-frontend-staging", mountPoint: mountPoint, walletManager: walletManager, store: store)
+            vc = BRWebViewController(bundleName: "bread-frontend", mountPoint: mountPoint, walletManager: walletManager, store: store)
         #else
             vc = BRWebViewController(bundleName: "bread-frontend", mountPoint: mountPoint, walletManager: walletManager, store: store)
         #endif
