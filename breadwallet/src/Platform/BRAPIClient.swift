@@ -37,8 +37,8 @@ let BRAPIClientErrorDomain = "BRApiClientErrorDomain"
     
     public var description: String {
         switch self {
-        case .buyBitcoin: return "buy-bitcoin";
-        case .earlyAccess: return "early-access";
+        case .buyBitcoin: return ""; //"buy-bitcoin";
+        case .earlyAccess: return ""; //"early-access";
         }
     }
 }
@@ -70,13 +70,12 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
     
     // proto is the transport protocol to use for talking to the API (either http or https)
     var proto = "https" //HTTPS Connection awaiting SSL Certificate
-    //var proto = "http"
     
     // host is the server(s) on which the API is hosted
     #if Testflight || Debug
-    var host = "api.loafwallet.org" // GitHub Pages currently doesn't support more than one domain per repo
+    var host = "api.strayawallet.com" // GitHub Pages currently doesn't support more than one domain per repo
     #else
-    var host = "api.loafwallet.org"
+    var host = "api.strayawallet.com"
     #endif
     
     // isFetchingAuth is set to true when a request is currently trying to renew authentication (the token)
@@ -156,7 +155,7 @@ open class BRAPIClient : NSObject, URLSessionDelegate, URLSessionTaskDelegate, B
             let authKey = authKey,
             let signingData = mutableRequest.signingString.data(using: .utf8) {
             let sig = signingData.sha256_2.compactSign(key: authKey)
-            let hval = "LoafWallet \(token):\(sig.base58)"
+            let hval = "SreayaWallet \(token):\(sig.base58)"
             mutableRequest.setValue(hval, forHTTPHeaderField: "Authorization")
         }
         return mutableRequest

@@ -421,11 +421,13 @@ class ModalPresenter : Subscriber, Trackable {
                             Setting(title: "Strayacoin Nodes", callback: {
                                 let nodeSelector = NodeSelectorViewController(walletManager: walletManager)
                                 settingsNav.pushViewController(nodeSelector, animated: true)
-                            })
+                            }),
+                            //MARK: BITCOIN WITHDRAWAL - USELES
 //                            Setting(title: S.BCH.title, callback: {
 //                                let bCash = BCashTransactionViewController(walletManager: walletManager, store: myself.store)
 //                                settingsNav.pushViewController(bCash, animated: true)
 //                            })
+                                //MARK: END!
                         ]
                     ]
 
