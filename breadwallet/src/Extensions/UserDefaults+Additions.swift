@@ -38,16 +38,16 @@ extension UserDefaults {
 
     static var defaultCurrencyCode: String {
         get {
-            var currencyCode = "USD";
+            var currencyCode = "AUD";
             if defaults.object(forKey: defaultCurrencyCodeKey) == nil {
-                currencyCode = Locale.current.currencyCode ?? "USD"
+                currencyCode = Locale.current.currencyCode ?? "AUD"
             } else {
                 currencyCode = defaults.string(forKey: defaultCurrencyCodeKey)!
             }
             let acceptedCurrencyCodes = ["AUD","NZD","GBP","USD","CAD","DKK","JPY","HUF","PLN","RON","SEK","CHF","NOK","HRK","RUB","TRY","BRL","CZK","CNY","HKD","IDR","ILS","INR","KRW","MXN","MYR","BGN","PHP","SDG","THB","ZAR"]
 
             if !(acceptedCurrencyCodes.contains(currencyCode)) {
-                return "USD";
+                return "AUD";
             }
 
             return currencyCode;
@@ -74,11 +74,11 @@ extension UserDefaults {
     static var maxDigits: Int {
         get {
             guard defaults.object(forKey: maxDigitsKey) != nil else {
-                return 5
+                return 8
             }
             let maxDigits = defaults.integer(forKey: maxDigitsKey)
             if maxDigits == 5 {
-                return 8 //Convert lites to LTC
+                return 8 //Convert YEAH to NAH
             } else {
                 return maxDigits
             }
