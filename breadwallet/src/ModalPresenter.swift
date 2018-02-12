@@ -404,9 +404,9 @@ class ModalPresenter : Subscriber, Trackable {
                 })
             ],
             "StrayaWallet": [
-                //Setting(title: S.Settings.shareData, callback: {
-                //    settingsNav.pushViewController(ShareDataViewController(store: self.store), animated: true)
-                //}),
+                Setting(title: S.Settings.shareData, callback: {
+                    settingsNav.pushViewController(ShareDataViewController(store: self.store), animated: true)
+                }),
                 Setting(title: S.Settings.about, callback: {
                     settingsNav.pushViewController(AboutViewController(), animated: true)
                 })
