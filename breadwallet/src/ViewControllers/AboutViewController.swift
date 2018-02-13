@@ -53,7 +53,6 @@ class AboutViewController : UIViewController {
             blog.topAnchor.constraint(equalTo: logoBackground.bottomAnchor, constant: C.padding[2]),
             blog.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             blog.trailingAnchor.constraint(equalTo: view.trailingAnchor) ])
-›
         reddit.constrain([
             reddit.topAnchor.constraint(equalTo: twitter.bottomAnchor, constant: C.padding[2]),
             reddit.leadingAnchor.constraint(equalTo: view.leadingAnchor),

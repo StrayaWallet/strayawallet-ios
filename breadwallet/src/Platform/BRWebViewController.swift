@@ -373,7 +373,7 @@ import WebKit
         //MARK (losh11): - improve code which closes webView
         if let url = navigationAction.request.url?.absoluteString{
             let mutableurl = url
-            if mutableurl == "https://api.loafwallet.org/close" {
+            if mutableurl == "https://api.strayawallet.com/close" {
                 DispatchQueue.main.async {
                     self.closeNow()
                 }
