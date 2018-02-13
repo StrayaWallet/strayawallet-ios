@@ -281,7 +281,7 @@ enum S {
         static let blog = NSLocalizedString("About.blog", value:"Visit Website", comment: "About screen blog label")
         static let twitter = NSLocalizedString("About.twitter", value:"Donate Some NAH!", comment: "About screen twitter label")
         static let reddit = NSLocalizedString("About.reddit", value:"StrayaCoin Reddit", comment: "About screen reddit label")
-        static let privacy = NSLocalizedString("About.privacy", value:"Developed by AdelaideCreative", comment: "Privay Policy button label")
+        static let privacy = NSLocalizedString("About.privacy", value:"iOS Lead developer: David Gilbert", comment: "Privay Policy button label")
         static let footer = NSLocalizedString("About.footer", value:"Version %1$@", comment: "About screen footer")
     }
     

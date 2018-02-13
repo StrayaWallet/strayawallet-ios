@@ -18,6 +18,7 @@ class AboutViewController : UIViewController {
     private let twitter = AboutCell(text: S.About.twitter)
     private let reddit = AboutCell(text: S.About.reddit)
     private let privacy = UIButton(type: .system)
+    private let privacy2 = UILabel(font: .customBody(size: 13.0), color: .secondaryGrayText)
     private let footer = UILabel(font: .customBody(size: 13.0), color: .secondaryGrayText)
     override func viewDidLoad() {
         addSubviews()
@@ -34,6 +35,7 @@ class AboutViewController : UIViewController {
         view.addSubview(twitter)
         view.addSubview(reddit)
         view.addSubview(privacy)
+        view.addSubview(privacy2)
         view.addSubview(footer)
     }
 
@@ -51,10 +53,7 @@ class AboutViewController : UIViewController {
             blog.topAnchor.constraint(equalTo: logoBackground.bottomAnchor, constant: C.padding[2]),
             blog.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             blog.trailingAnchor.constraint(equalTo: view.trailingAnchor) ])
-        twitter.constrain([
-            twitter.topAnchor.constraint(equalTo: blog.bottomAnchor, constant: C.padding[2]),
-            twitter.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            twitter.trailingAnchor.constraint(equalTo: view.trailingAnchor) ])
+›
         reddit.constrain([
             reddit.topAnchor.constraint(equalTo: twitter.bottomAnchor, constant: C.padding[2]),
             reddit.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -89,7 +88,7 @@ class AboutViewController : UIViewController {
             myself.presentURL(string: "https://reddit.com/r/strayacoin/")
         }
         privacy.tap = strongify(self) { myself in
-            myself.presentURL(string: "https://www.adelaidecreative.com.au")
+            myself.presentURL(string: "https://www.davidmgilbert.com")
         }
     }
 
