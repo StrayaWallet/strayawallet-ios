@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import breadwallet
+@testable import StrayaWallet
 import BRCore
 
 class FakeAuthenticator: WalletAuthenticator {

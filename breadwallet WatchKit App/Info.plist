@@ -17,16 +17,16 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>YEAH</string>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>DUNNO</string>
+	<string>2</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.adelaidecreative.strayawallet-ios</string>
+	<string>com.strayawallet.strayawallet-ios</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

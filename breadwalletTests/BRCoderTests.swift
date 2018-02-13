@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import breadwallet
+@testable import StrayaWallet
 
 class TestObject: BRCoding {
     var string: String

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import breadwallet
+@testable import StrayaWallet
 
 private var walletManager: WalletManager?
 private var client: BRAPIClient?
