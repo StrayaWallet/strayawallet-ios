@@ -38,7 +38,7 @@ struct C {
     static let null = "(null)"
     static let maxMemoLength = 250
     static let feedbackEmail = "support@strayawallet.com"
-    static let reviewLink = ""
+    static let reviewLink = "https://itunes.apple.com/app/strayawallet/id1348073666"
     static var standardPort: Int {
         return E.isTestnet ? 19335 : 9666
     }
