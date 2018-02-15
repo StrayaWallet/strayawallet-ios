@@ -158,13 +158,14 @@ class StartImportViewController : UIViewController {
             request.httpMethod = "POST"
             request.httpBody = "addrs=\(address)".data(using: .utf8)
             let task = URLSession.shared.dataTask(with: request as URLRequest) { [weak self] data, response, error in
-                guard let myself = self else { return }
-                guard error == nil else { print("error: \(error!)"); return }
-                guard let data = data,
+                  guard let myself = self else { return }
+                  guard error == nil else { print("error: \(error!)"); return }
+                  guard let data = data,
                     let jsonData = try? JSONSerialization.jsonObject(with: data, options: []),
                     let json = jsonData as? [[String: Any]] else { return }
                 myself.handleData(data: json, key: key)
             }
+            debugPrint(task)
             task.resume()
         })
     }
