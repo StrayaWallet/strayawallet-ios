@@ -70,6 +70,7 @@
 		22C431341DF89DFE0017CAEA /* BRCoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C431331DF89DFE0017CAEA /* BRCoderTests.swift */; };
 		22C431361DF8A6DF0017CAEA /* BRAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C431351DF8A6DF0017CAEA /* BRAPIClientTests.swift */; };
 		22E773041EE7813000397E0E /* Bonjour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E773031EE7813000397E0E /* Bonjour.swift */; };
+		63020B0920349D83008189AD /* BalanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7CE1DA5934300A983D8 /* BalanceInterfaceController.swift */; };
 		7503773D1DF57428005EB8AE /* WalletManager+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7503773C1DF57428005EB8AE /* WalletManager+Auth.swift */; };
 		751734B91DAC941E00193C87 /* sec-sub-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 755CD8BE1DAA16820075898E /* sec-sub-1.c */; };
 		752438751DAAC50800844BEC /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 755CD6761DAA0E400075898E /* alloc.c */; };
@@ -205,7 +206,6 @@
 		75A2A7BF1DA5934300A983D8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A2A7BD1DA5934300A983D8 /* Interface.storyboard */; };
 		75A2A7C11DA5934300A983D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75A2A7C01DA5934300A983D8 /* Assets.xcassets */; };
 		75A2A7C81DA5934300A983D8 /* StrayaWallet WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 75A2A7C71DA5934300A983D8 /* StrayaWallet WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		75A2A7CF1DA5934300A983D8 /* BalanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7CE1DA5934300A983D8 /* BalanceInterfaceController.swift */; };
 		75A2A7D11DA5934300A983D8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7D01DA5934300A983D8 /* ExtensionDelegate.swift */; };
 		75A2A7D31DA5934300A983D8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7D21DA5934300A983D8 /* NotificationController.swift */; };
 		75A2A7D51DA5934300A983D8 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2A7D41DA5934300A983D8 /* ComplicationController.swift */; };
@@ -3700,11 +3700,21 @@
 					75A2A7B71DA5934300A983D8 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					75A2A7C61DA5934300A983D8 = {
 						CreatedOnToolsVersion = 8.0;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					75A2A7EF1DA5935F00A983D8 = {
 						CreatedOnToolsVersion = 8.0;
@@ -4259,13 +4269,13 @@
 				CED811E51EB30846003A8D1E /* ReceiveInterfaceController.swift in Sources */,
 				CEE513EF1EB6A84800D6E4D7 /* Strings.swift in Sources */,
 				CED811AC1EB2BCDE003A8D1E /* BRAWWeakTimerTarget.swift in Sources */,
+				63020B0920349D83008189AD /* BalanceInterfaceController.swift in Sources */,
 				CE30F0E81EB27FA2004B8EE5 /* WatchDataManager.swift in Sources */,
 				75A2A7D31DA5934300A983D8 /* NotificationController.swift in Sources */,
 				CED811E01EB302DA003A8D1E /* WatchData.swift in Sources */,
 				75A2A7D51DA5934300A983D8 /* ComplicationController.swift in Sources */,
 				75A2A7D11DA5934300A983D8 /* ExtensionDelegate.swift in Sources */,
 				CE30F0EA1EB282C8004B8EE5 /* SharedConstants.swift in Sources */,
-				75A2A7CF1DA5934300A983D8 /* BalanceInterfaceController.swift in Sources */,
 				CED811E31EB302E2003A8D1E /* WatchTransaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
